@@ -3,10 +3,10 @@ const mongoose = require("mongoose");
 const articleSchema = new mongoose.Schema({
   title: {
       type: String,
-      require: true
+      require: true,
   },
   date: {
-      type: Number,
+      type: String,
       require: true
   },
   url: {
@@ -15,4 +15,4 @@ const articleSchema = new mongoose.Schema({
   }
   });
 
-module.exports = mongoose.model("Book", bookSchema);
+module.exports = mongoose.model("articles", articlesSchema);
